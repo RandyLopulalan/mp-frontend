@@ -1,0 +1,13 @@
+/* .list{
+    position: relative;
+} */
+.list > h3 {
+    text-align: center;
+}
+
+.list-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+    padding: 1em;
+}

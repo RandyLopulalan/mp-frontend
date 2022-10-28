@@ -1,0 +1,9 @@
+.listData{
+    border: 1px solid gray;
+    padding: 1em;
+    margin: .5em;
+}
+
+.btn {
+    padding: .5em;
+}

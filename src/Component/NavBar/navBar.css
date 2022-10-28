@@ -1,0 +1,18 @@
+.navBar{
+    display: flex;
+    gap: 1em;
+}
+
+.navBar > p {
+    padding: 0 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 10%;
+}
+.navBar > p:hover {
+    background: black;
+    color: white;
+}
