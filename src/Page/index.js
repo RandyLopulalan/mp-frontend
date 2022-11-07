@@ -1,4 +1,6 @@
-import { Home } from "./Home/home";
-import { List } from "./List/list";
+import { Map } from "./Map/map";
+import { Detail } from "./Detail/detail"
+import { Cctv } from "./Cctv/cctv";
 
-export {Home, List}
+
+export {Map, Detail, Cctv}

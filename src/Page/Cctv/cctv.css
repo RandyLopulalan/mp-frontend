@@ -1,0 +1,15 @@
+.cctv{
+    height: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    background: rgb(230, 230, 230);
+    
+}
+
+.cctv-view{
+    height: 82vh;
+    background: white;
+}
