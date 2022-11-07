@@ -8,9 +8,39 @@ import { useSelector } from 'react-redux';
 import './detail.css'
 import "swiper/css";
 import "swiper/css/navigation";
+import { useCallback } from 'react';
 
 export const Detail = () => {
   const { data } = useSelector((state) => state.data);
+
+  const mappingDetail = useCallback(()=>{
+      return(
+        <section className='detail-table'>
+          <table>
+            <thead>
+              <tr>
+                <th>header</th>
+                <th>header</th>
+                <th>header</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>row</td>
+                <td>row</td>
+                <td>row</td>
+              </tr>
+              <tr>
+                <td>row</td>
+                <td>row</td>
+                <td>row</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      )
+  },[])
+
 
   return (
     <div className='detail'>
@@ -52,6 +82,7 @@ export const Detail = () => {
               info lainnya
               <p>list nama dokter</p>
               <p>fasilitas dan harga</p>
+              {mappingDetail()}
               <p className='btn-back'><Link to={"/map"}>Back</Link></p>
             </article>
           </div>

@@ -3,6 +3,7 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet'
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom'
 import { dataPerusahaan } from '../../Component/dataInit';
+import { getPage } from '../../features/common/commonSlice';
 import { getData } from '../../features/data/dataSlice';
 import './map.css'
 
@@ -11,9 +12,9 @@ export const Map = () => {
   const dispatch = useDispatch()
   const defaultPosition = [-7.9797, 112.6304]
 
-  {/*=== to page detail & save state data ===*/}
   const toDetail = useCallback((list) => {
     navigate("/detail")
+    dispatch(getPage('detail'))
     dispatch(getData(list))
   },[navigate, dispatch])
 

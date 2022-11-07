@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  pageState: "detail",
+  pageState: "",
   isError: false,
   isSuccess: false,
   isLoading: false,
